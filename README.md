@@ -1,5 +1,5 @@
 # todo-angular
-I made this project based on this [lecture](https://www.youtube.com/watch?v=UOR6i0FV8dc&list=PLkY6Xj8Sg8-uBQaBU8wMLo2CrFkE-9VIZ) on youtube
+I made this project based on this [lecture](https://www.youtube.com/watch?v=UOR6i0FV8dc&list=PLkY6Xj8Sg8-uBQaBU8wMLo2CrFkE-9VIZ) on youtube  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
 ## Development server
