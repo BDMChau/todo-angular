@@ -1,0 +1,82 @@
+.todo-item {
+    margin-top: 15px;
+    border-bottom: 1px solid #dbc7c7;
+    transition: 0.5s;
+}
+
+.todos {
+    padding: 0 0;
+    color: #624d4d;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.todos .check-box {
+    position: absolute;
+    width: 35px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+}
+
+.todos label {
+    padding: 0 45px;
+    word-break: break-all;
+}
+
+.check-box + label {
+    background-image: url("../../img/check.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    font-size: 22px !important;
+}
+
+.icon {
+    padding: 0px 7px 0px 0px;
+    font-size: 24px;
+}
+
+span.icon-edit {
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    color: cadetblue;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+
+.form-edit input {
+    position: absolute;
+    width: 500px;
+    border: none;
+    border-bottom: 2px solid #dbc7c7;
+    height: 34px;
+    font-size: 22px;
+    color: #624d4d;
+    font-weight: 500;
+    text-indent: 3px;
+    margin-left: 42px;
+}
+
+.form-edit input:focus {
+    outline: none;
+}
+
+span.icon-remove {
+    cursor: pointer;
+    color: #e91e63;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+span.icon-edit:hover,
+span.icon-remove:hover {
+    transform: scale(1.2);
+}
+
+.todo-item:hover span.icon-remove,
+.todo-item:hover span.icon-edit {
+    opacity: 1;
+}

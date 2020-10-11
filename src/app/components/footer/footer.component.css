@@ -1,0 +1,66 @@
+.app-footer {
+  margin-top: 5px;
+  padding: 0px 0px 30px 0px;
+}
+
+.app-footer:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  overflow: hidden;
+  background-color: white;
+  z-index: -1;
+  border-left: 1px solid #eadfdf;
+  border-right: 1px solid #eadfdf;
+  box-shadow: 0 1px 0px #eadfdf, 0 11px 0 -4px #f6f6f6, 0 11px 1px -3px #dbc7c7bd
+}
+
+span.items-count{
+  padding-left: 5px;
+  color: #a08787;
+  font-weight: 500;
+}
+
+.app-footer button {
+  transition: 0.3s;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.app-footer button:hover {
+  background-color: #dbc7c7bd !important;
+  color: #655353;
+}
+
+.app-footer button.btn {
+  padding: 5px 10px;
+  margin: 0px 5px;
+  color: #a08787;
+}
+
+.app-footer button.btn:focus {
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #dbc7c7;
+  box-shadow: none;
+}
+
+.app-footer button.clear-btn {
+  border: none;
+  background: transparent;
+  padding: 5px 10px;
+  color: #a08787;
+  visibility: hidden;
+}
+
+.app-footer button.clear-btn .visible {
+    visibility: visible;
+}
+
+.app-footer button.clear-btn:focus {
+  outline: none;
+}

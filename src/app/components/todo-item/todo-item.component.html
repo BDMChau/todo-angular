@@ -1,0 +1,21 @@
+<div class="todo-item d-flex justify-content-between align-items-center">
+
+    <div class="todos">
+        <form class="form-edit" *ngIf="isEdit">
+            <input name="edit-form" type="text" (keyup)="edit($event)" [(ngModel)]="todo.content" maxlength="38">
+        </form>
+        <input type="checkbox" class="check-box" [id]="todo.id" [checked]="todo.isDone" (click)="changeStt()">
+        <label [@fadeItem]="todo.isDone ? 'complete' : 'unComplete'" [for]="todo.id">{{todo.content}}</label>
+    </div>
+
+
+    <div class="icon d-flex align-items-center">
+        <span class="icon-edit" [hidden]="todo.isDone">
+            <i class="eva eva-edit-outline" (click)="isEdit = !isEdit"></i>
+        </span>
+        <span class="icon-remove" (click)="remove()">
+            <i class="eva eva-close"></i>
+        </span>
+    </div>
+
+</div>

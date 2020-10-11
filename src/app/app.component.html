@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center d-flex flex-column">
+    <div class="title mt-5">Todos</div>
+    <div class="todo-wrapper mt-3">
+      <app-header></app-header>
+      <app-todo-list></app-todo-list>
+      <app-footer *ngIf="hasTodo$ | async"></app-footer>
+    </div>
+    <small class="instruction text-center" [ngStyle]="{'margin-top': '10%'}">
+      <em>Press Enter to add new todo. Press arrow icon to check all todos.</em>
+      <br>
+      Copyright TodoMVC project
+    </small>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.title {
+  font-size: 75px;
+  color: #ad7f7f70;
+  font-weight: 600;
+}
+
+.todo-wrapper {
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px 10px;
+  background: white;
+  width: 70%;
+  border: 1px solid #82626240;
+}
+
+.instruction {
+  color: #646457;
+}
